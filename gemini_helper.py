@@ -18,7 +18,7 @@ def ekstrak_transaksi(teks_pesan):
     client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
     
     response = client.models.generate_content(
-        model="gemini-2.5-flash",
+        model="gemini-3.6-flash",
         contents=f"{SYSTEM_PROMPT}\nPesan: {teks_pesan}",
         config=types.GenerateContentConfig(
             response_mime_type="application/json"
