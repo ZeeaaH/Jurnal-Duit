@@ -1,0 +1,16 @@
+# File rahasia & environment
+.env
+
+# Database lokal
+*.db
+keuangan.db
+
+# Python cache & virtual environment
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Folder setelan code editor
+.vscode/
+.idea/
